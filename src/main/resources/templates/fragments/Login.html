@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color: lightgray;" class="flex flex-col justify-center items-center" th:fragment="login">
+    <div class="w-[50vh] h-[70vh] flex flex-col justify-center items-center rounded-lg" style="background-color: whitesmoke;">
+        <article th:fragment="login" class="w-full h-full flex flex-col justify-center items-center">
+            <article class="w-[50%] h-[30%] flex justify-evenly items-center">
+                <img src="https://res-console.cloudinary.com/dqoejlc6m/media_explorer_thumbnails/3ec5055602f7a9efb5ba8dab97f84092/detailed" alt="" >
+            </article>
+            <form action="" method="post" class="w-[70%] h-[50%] flex flex-col justify-evenly">
+                <input type="email" name="email" placeholder="Email"  class="rounded-md border-solid border-b-2 border-blue-900 outline-none focus:border-yellow-900">
+                <input type="password" name="password" placeholder="Password"  class="rounded-md border-solid border-b-2 border-blue-900 outline-none focus:border-yellow-900">
+                <label class="peer ...">
+                    <input type="checkbox" name="todo[1]" />
+                    Terminos y Condiciones
+                  </label>
+                <input type="submit" name="submit" value="Iniciar Sesion" class="bg-blue-400 rounded-md border-2 border-solid border-black text-white">
+            </form>
+        </article>
+    </div>
+</body>
+</html>
